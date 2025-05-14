@@ -1,3 +1,7 @@
+
+
+### **ER Schema**
+![alt text](./ERD/Airbnb_ER.png)
 To determine if the provided database schema (tables: **User**, **Property**, **Booking**, **Payment**, **Review**, **Message**) is in **Third Normal Form (3NF)**, we need to verify that each table satisfies the requirements of **First Normal Form (1NF)**, **Second Normal Form (2NF)**, and **Third Normal Form (3NF)**. Below, I’ll explain the normalization process, check each table against these criteria, and conclude whether the schema is in 3NF.
 
 ---
