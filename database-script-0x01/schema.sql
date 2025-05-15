@@ -5,8 +5,8 @@ CREATE TABLE IF NOT EXISTS User(
     user_id CHAR(36) PRIMARY KEY,
     first_name VARCHAR(256) NOT NULL,
     last_name VARCHAR(256) NOT NULL,
-    email VARCHAR(25) UNIQUE NOT NULL,
-    password_hash VARCHAR(55) NOT NULL,
+    email VARCHAR(256) UNIQUE NOT NULL,
+    password_hash VARCHAR(256) NOT NULL,
     phone_number VARCHAR(20) NULL,
     role ENUM('guest', 'host', 'admin') NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
