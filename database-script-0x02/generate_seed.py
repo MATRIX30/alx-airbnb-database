@@ -4,7 +4,7 @@ import random
 
 fake = Faker()
 
-NUM_RECORDS = 200
+NUM_RECORDS = 20000
 
 # Generate Users
 users = []

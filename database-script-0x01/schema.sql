@@ -1,6 +1,6 @@
---- This sql DDL commands will create the database schema for the Airbnb project specification
+-- This sql DDL commands will create the database schema for the Airbnb project specification
 
---- User Schema
+-- User Schema
 CREATE TABLE IF NOT EXISTS User(
     user_id CHAR(36) PRIMARY KEY,
     first_name VARCHAR(256) NOT NULL,
@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS Property(
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     FOREIGN KEY (host_id) REFERENCES User(user_id) ON DELETE CASCADE
-)
+);
 
 -- Booking Table
 CREATE TABLE IF NOT EXISTS Booking (
